@@ -1,63 +1,101 @@
-# Interior Design Project
+# InteriorWala - Interior Design Templates
 
-## Deployment Instructions
+A modern React application for browsing and managing interior design templates. Built with Vite, React, TypeScript, and Supabase.
 
-### Frontend Deployment (Vercel)
+## Features
 
-1. **Prepare your repository**
-   - Make sure your code is pushed to a GitHub repository
+- 🏠 Browse interior design templates by category
+- ❤️ Save favorite designs
+- 📱 Responsive design for mobile and desktop
+- 🔐 User authentication and profiles
+- 📊 User dashboard with projects and favorites
+- 📞 Contact support system
+- 🎨 Modern UI with Tailwind CSS and shadcn/ui components
 
-2. **Deploy on Vercel**
-   - Go to [Vercel](https://vercel.com) and sign in with your GitHub account
-   - Click "New Project" and import your repository
-   - Select the Frontend directory as the root directory
-   - Vercel will automatically detect the Vite framework
-   - Click "Deploy"
+## Tech Stack
 
-3. **Environment Variables**
-   - After deployment, go to your project settings
-   - Add any necessary environment variables (like API URLs)
+- **Frontend**: React 19, TypeScript, Vite
+- **Styling**: Tailwind CSS, shadcn/ui components
+- **Backend**: Supabase (Database, Authentication, Storage)
+- **Icons**: Lucide React
+- **Forms**: React Hook Form
+- **Notifications**: Sonner
 
-### Backend Deployment (Vercel)
+## Getting Started
 
-1. **Prepare your repository**
-   - Make sure your code is pushed to a GitHub repository
+### Prerequisites
 
-2. **Deploy on Vercel**
-   - Go to [Vercel](https://vercel.com) and sign in with your GitHub account
-   - Click "New Project" and import your repository
-   - Select the backend directory as the root directory
-   - Vercel will automatically detect the Node.js project
-   - Click "Deploy"
+- Node.js 18+ 
+- npm or yarn
+- Supabase account
 
-3. **Environment Variables**
-   - After deployment, go to your project settings
-   - Add all required environment variables from your .env file:
-     - MONGODB_URI (already configured with your MongoDB Atlas connection)
-     - JWT_SECRET
-     - NODE_ENV (set to "production")
-     - Add the frontend URL to FRONTEND_URL for CORS
+### Installation
 
-4. **Connect Frontend to Backend**
-   - Update the API URL in your frontend code to point to your deployed backend URL
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-## Local Development
+3. Set up environment variables:
+   Create a `.env.local` file in the root directory:
+   ```
+   VITE_SUPABASE_URL=your_supabase_url
+   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+   ```
 
-### Frontend
-```bash
-cd Frontend
-npm install
-npm run dev
-```
+4. Set up the database:
+   - Run the SQL commands from `lib/database.sql` in your Supabase SQL editor
+   - This will create the necessary tables and policies
 
-### Backend
-```bash
-cd backend
-npm install
-npm run dev
-```
+5. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+6. Open [http://localhost:5173](http://localhost:5173) in your browser
 
 ## Project Structure
 
-- `Frontend/` - React frontend built with Vite
-- `backend/` - Express.js backend API
+```
+src/
+├── components/          # React components
+│   ├── ui/            # Reusable UI components
+│   ├── figma/         # Figma-specific components
+│   └── ...            # Page components
+├── lib/               # Utilities and services
+│   ├── services.ts    # API service functions
+│   ├── supabase.ts   # Supabase client and types
+│   └── database.sql   # Database schema
+├── styles/            # Global styles
+└── App.tsx           # Main application component
+```
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## Database Schema
+
+The application uses the following main tables:
+
+- **profiles** - User profile information
+- **designs** - Design templates
+- **projects** - User projects based on designs
+- **user_favorites** - User's favorite designs
+- **contacts** - Contact form submissions
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Run tests and linting
+5. Submit a pull request
+
+## License
+
+This project is licensed under the MIT License.
