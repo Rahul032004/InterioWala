@@ -6,7 +6,7 @@ import { Textarea } from './ui/textarea';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from './ui/dialog';
 import { useAuth } from './useAuth';
 import { Phone, MapPin, Globe, User, Mail, Upload, Camera } from 'lucide-react';
-import { storageService } from '../lib/services';
+import { storageService } from '../../lib/services';
 import { toast } from 'sonner';
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
 

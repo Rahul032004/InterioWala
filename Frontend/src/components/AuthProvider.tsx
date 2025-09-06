@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import type { ReactNode } from 'react';
-import { authService } from '../lib/services';
-import type { AuthUser, AuthContextType } from '../lib/types';
+import { authService } from '../../lib/services';
+import type { AuthUser, AuthContextType } from '../../lib/types';
 
 // Using AuthUser type from types.ts with an additional role field
 type User = AuthUser & { role?: string };

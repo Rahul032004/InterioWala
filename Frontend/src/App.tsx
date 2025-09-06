@@ -1,14 +1,14 @@
 import { useState } from 'react';
-import { Navigation } from '../components/Navigation';
-import { HomePage } from '../components/HomePage';
-import { DesignGallery } from '../components/DesignGallery';
-import { ProjectDetail } from '../components/ProjectDetail';
-import { UserDashboard } from '../components/UserDashboard';
-import { ContactPage } from '../components/ContactPage';
-import { AuthPage } from '../components/AuthPage';
-import { ProfilePage } from '../components/ProfilePage';
-import { AuthProvider } from '../components/AuthProvider';
-import { Toaster } from '../components/ui/sonner';
+import { Navigation } from './components/Navigation';
+import { HomePage } from './components/HomePage';
+import { DesignGallery } from './components/DesignGallery';
+import { ProjectDetail } from './components/ProjectDetail';
+import { UserDashboard } from './components/UserDashboard';
+import { ContactPage } from './components/ContactPage';
+import { AuthPage } from './components/AuthPage';
+import { ProfilePage } from './components/ProfilePage';
+import { AuthProvider } from './components/AuthProvider';
+import { Toaster } from './components/ui/sonner';
 
 type PageType = 'home' | 'gallery' | 'detail' | 'dashboard' | 'contact' | 'auth' | 'profile';
 

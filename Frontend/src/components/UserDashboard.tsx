@@ -14,8 +14,8 @@ import {
 } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { useAuth } from './useAuth';
-import { projectService, favoriteService } from '../lib/services';
-import type { Project, UserFavorite } from '../lib/types';
+import { projectService, favoriteService } from '../../lib/services';
+import type { Project, UserFavorite } from '../../lib/types';
 
 interface UserDashboardProps {
   onNavigate: (page: string, designId?: string) => void;

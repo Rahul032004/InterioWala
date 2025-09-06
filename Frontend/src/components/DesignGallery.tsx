@@ -6,8 +6,8 @@ import { Badge } from './ui/badge';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
 import { Search, Filter, Star, Download, Bookmark, Heart } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import { designService, favoriteService } from '../lib/services';
-import type { Design } from '../lib/types';
+import { designService, favoriteService } from '../../lib/services';
+import type { Design } from '../../lib/types';
 import { useAuth } from './useAuth';
 
 interface DesignGalleryProps {

@@ -1,5 +1,5 @@
 import { createContext } from 'react';
-import type { AuthUser, AuthContextType } from '../lib/types';
+import type { AuthUser, AuthContextType } from '../../lib/types';
 
 // Using AuthUser type from types.ts with an additional role field
 type User = AuthUser & { role?: string };

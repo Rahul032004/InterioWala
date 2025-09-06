@@ -19,7 +19,7 @@ import {
   Headphones,
   CheckCircle
 } from 'lucide-react';
-import { contactService } from '../lib/services';
+import { contactService } from '../../lib/services';
 import { toast } from 'sonner';
 
 interface ContactPageProps {
