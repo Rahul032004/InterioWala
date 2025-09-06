@@ -117,13 +117,13 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 className="group cursor-pointer hover:shadow-lg transition-all duration-300 overflow-hidden"
                 onClick={() => onNavigate('detail', design.id)}
               >
-                <div className="relative aspect-[4/3] overflow-hidden">
+                <div className="relative overflow-hidden rounded-lg">
                   <ImageWithFallback
                     src={design.image}
                     alt={design.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="-full h-auto object-cover"
                   />
-                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <Button 
                     variant="secondary" 
                     size="icon"

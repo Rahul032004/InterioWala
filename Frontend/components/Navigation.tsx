@@ -199,7 +199,7 @@ export function Navigation({ currentPage, onNavigate }: NavigationProps) {
       )}
 
       {/* Mobile Bottom Navigation */}
-      <div className="md:hidden fixed bottom-0 left-0 right-0 bg-background border-t border-border px-4 py-2">
+<div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-4 py-2 z-50">
         <div className="flex justify-around">
           {navItems.map((item) => {
             const Icon = item.icon;
